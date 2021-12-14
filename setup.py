@@ -17,7 +17,7 @@ with open(file='README.md', mode='r', encoding='utf-8') as f:
 
 setup(
     name="sap-utils",
-    version="0.0.2",
+    version="0.0.3.1",
     description="Random utility code.",
     long_description=readme,
     long_description_content_type="text/markdown",
