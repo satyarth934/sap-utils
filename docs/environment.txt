@@ -1,0 +1,54 @@
+name: python_pkg_venv
+channels:
+  - defaults
+dependencies:
+  - bzip2=1.0.8=h1de35cc_0
+  - ca-certificates=2022.3.29=hecd8cb5_0
+  - certifi=2020.6.20=pyhd3eb1b0_3
+  - libcxx=12.0.0=h2f01273_0
+  - libffi=3.3=hb1e8313_2
+  - ncurses=6.3=hca72f7f_2
+  - openssl=1.1.1n=hca72f7f_0
+  - python=3.10.4=hdfd78df_0
+  - readline=8.1.2=hca72f7f_1
+  - sqlite=3.38.2=h707629a_0
+  - tk=8.6.11=h7bc2e8c_0
+  - tzdata=2022a=hda174b7_0
+  - wheel=0.37.1=pyhd3eb1b0_0
+  - xz=5.2.5=h1de35cc_0
+  - zlib=1.2.11=h4dc903c_4
+  - pip:
+    - alabaster==0.7.12
+    - attrs==21.4.0
+    - babel==2.9.1
+    - charset-normalizer==2.0.12
+    - docutils==0.17.1
+    - idna==3.3
+    - imagesize==1.3.0
+    - jinja2==3.1.1
+    - markdown-it-py==2.0.1
+    - markupsafe==2.1.1
+    - mdit-py-plugins==0.3.0
+    - mdurl==0.1.0
+    - myst-parser==0.17.0
+    - packaging==21.3
+    - pip==21.2.4
+    - pygments==2.11.2
+    - pyparsing==3.0.7
+    - pytz==2022.1
+    - pyyaml==6.0
+    - requests==2.27.1
+    - setuptools==58.0.4
+    - snowballstemmer==2.2.0
+    - sphinx==4.5.0
+    - sphinx-rtd-theme==1.0.0
+    - sphinxcontrib-applehelp==1.0.2
+    - sphinxcontrib-devhelp==1.0.2
+    - sphinxcontrib-htmlhelp==2.0.0
+    - sphinxcontrib-jsmath==1.0.1
+    - sphinxcontrib-mermaid==0.7.1
+    - sphinxcontrib-qthelp==1.0.3
+    - sphinxcontrib-serializinghtml==1.1.5
+    - typing-extensions==4.1.1
+    - urllib3==1.26.9
+prefix: /opt/anaconda3/envs/python_pkg_venv
