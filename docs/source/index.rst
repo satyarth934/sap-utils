@@ -7,10 +7,14 @@ Welcome to sap-utils's documentation!
 =====================================
 
 .. toctree::
-   myfile.md
+   :caption: Contents
    :maxdepth: 2
-   :caption: Contents:
 
+   myfile.md
+   
+
+.. automodule:: decorators
+   :members:
 
 
 Indices and tables

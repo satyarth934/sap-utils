@@ -7,16 +7,20 @@ from typing import Callable
 def timeit(function):
     """Decorator to check the execution time for a function.
 
+    Sample usage:
+    
+    .. code:: python
+        
+        @timeit
+        def random_function():
+            print("Trying the 'timeit' decorator.")
+
     Args:
         function (Callable): Function for which the time is to be checked.
 
     Returns:
         Callable: Returns the wrapped function that can print the execution time.
-    
-    Example:
-        @timeit
-        def random_function():
-            <code>
+
     """
     
     @functools.wraps(function)    # ensures that the function meta data stays the same and is not overwritten by the decorator.
@@ -33,16 +37,19 @@ def timeit(function):
 def print_debugging_markers(function):
     """Decorator to print at the entry and exit of a function.
 
+    Sample usage:
+
+    .. code:: python
+        
+        @print_debugging_markers
+        def random_function():
+            print("Trying the 'print_debugging_markers' decorator.")
+
     Args:
         function (Callable): Function for which debugging markers are to be printed.
 
     Returns:
         Callable: Returns the wrapped function that can print the debugging markers.
-    
-    Example:
-        @print_debugging_markers
-        def random_function():
-            <code>
     """
     
     @functools.wraps(function)    # ensures that the function meta data stays the same and is not overwritten by the decorator.
