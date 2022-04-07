@@ -5,8 +5,10 @@ def stall():
     """Can be used in a loop for debugging.
     Stalls the current iteration and requires a user input to either 
     continue to the next iteration or quit the loop.
+
+    Much poorer and infant version of python built-in function breakpoint().
     """
-    
+
     inp = input("Press [q|Q] to quit OR Enter to continue... ")
     
     if inp.lower() == 'q':
@@ -16,13 +18,20 @@ def stall():
 def warning_format(msg, *args, **kwargs):
     """Used to generate warnings within code.
     Prints the warning in the following format:
-    <script>:<n>: <type of warning>: <warning msg>
+
+    .. code:: console
+        
+        <script>:<n>: <type of warning>: <warning msg>
     
-    'n' is the line number of initiated warning command within the script
+    ``n`` is the line number of initiated warning command within the script
     
-    Example Usage:
+    Sample Usage:
+
+    .. code:: python
+
         import warnings
-        warnings.formatwarning = warning_format
+        from sap_utils import random
+        warnings.formatwarning = random.warning_format
         warnings.warn("<Warning msg>")
     """
     
