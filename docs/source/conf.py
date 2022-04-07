@@ -12,7 +12,7 @@
 
 import os
 import sys
-sys.path.insert(0, os.path.abspath('../../src/sap_utils'))
+sys.path.insert(0, os.path.abspath('../../src'))
 
 
 # -- Project information -----------------------------------------------------
@@ -32,9 +32,19 @@ release = '0.0.3.2'
 # ones.
 extensions = [
     'myst_parser',
-    'sphinx.ext.autodoc',
-    'sphinxcontrib.mermaid',
+    'sphinx.ext.autodoc',        # to automatically build documentation from docstrings
+    'sphinx.ext.napoleon',       # to build from google style docstrings
+    'sphinxcontrib.mermaid',     # to create pretty flow diagrams
+    'sphinx.ext.intersphinx',    # to link to API references of another project
 ]
+napoleon_google_docstring = True
+napoleon_numpy_docstring = False
+
+# TODO: Still need to figure out how this works in documentations and docstrings.
+intersphinx_mapping = {
+    'python': ('https://docs.python.org/3', None),
+    'numpy': ('http://docs.scipy.org/doc/numpy/', None)
+}
 
 
 # Add any paths that contain templates here, relative to this directory.
@@ -60,7 +70,7 @@ html_theme = "sphinx_rtd_theme"
 html_static_path = ['_static']
 
 
-# -- Extensions --------------------------------------------------------------
+# -- Miscelleneous -----------------------------------------------------------
 myst_enable_extensions = [
   "colon_fence",
 ]
