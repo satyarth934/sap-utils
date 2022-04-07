@@ -10,11 +10,9 @@ Welcome to sap-utils's documentation!
    :caption: Contents
    :maxdepth: 2
 
-   myfile.md
-   
-
-.. automodule:: decorators
-   :members:
+   context_managers
+   decorators
+   random
 
 
 Indices and tables
