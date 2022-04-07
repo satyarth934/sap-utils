@@ -5,9 +5,16 @@ class ExecTimeCM(object):
     """Context manager to be used with the 'with' clause 
     to get the execution time of a code block.
     
-    Example Usage:
-        with ExecTimeCM() as st:
+    Sample Usage:
+
+    .. code:: python
+
+        with ExecTimeCM("Testing") as st:
             print("sample code block.")
+
+    .. code:: console
+        
+        EXECUTION TIME for Testing: 0.0001 seconds
     """
     
     def __init__(self, txt="", verbose=True):
